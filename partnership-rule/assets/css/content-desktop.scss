@@ -1,0 +1,542 @@
+#content {
+    &.partnership-cashback {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+
+        @mixin fz($px_size) {
+            font-size: ($px_size / 16) * 1rem;
+        }
+
+        @mixin lh($px_size) {
+            line-height: ($px_size / 16) * 1rem;
+        }
+
+
+        .scroll-nav {
+            margin-bottom: 60px;
+
+            ul {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: start;
+                column-gap: 4px;
+
+                li {
+                    padding: 12px;
+                    flex-grow: 1;
+
+                    &:nth-child(1) {
+                        order: 1;
+                    }
+
+                    &:nth-child(2) {
+                        order: 2;
+                    }
+
+                    &:nth-child(3) {
+                        order: 3;
+                        width: auto;
+                    }
+
+                    &:nth-child(4) {
+                        order: 4;
+                    }
+
+                    &:nth-child(5) {
+                        order: 5;
+                        flex-grow: 0;
+                    }
+
+                    &:nth-child(6) {
+                        order: 6;
+                    }
+                }
+            }
+        }
+
+        .check-items {
+            ul {
+                li {
+                    list-style: none;
+                    margin-bottom: 23px;
+                    position: relative;
+                    padding: 0 6px 0 60px;
+
+                    &:first-child {
+                        &::before {
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+        }
+
+        /*-============================= Section how-works - start =============================-*/
+        .how-works {
+            display: flex;
+            margin-bottom: 125px;
+
+            .icon-blocks {
+                flex-wrap: nowrap;
+                row-gap: 26px;
+
+                .icon-block {
+                    flex: 0 1 32%;
+
+                    &.w-100 {
+                        flex: 0 1 32%;
+                        margin-bottom: 14px;
+                    }
+
+                    &.step-2 {
+                        flex: 0 1 32%;
+
+                        &::after {
+                            content: '';
+                            right: unset;
+                            bottom: unset;
+                            top: 35%;
+                            left: 100%;
+                            transform: translate(-40%, -50%) rotate(180deg);
+                        }
+                    }
+
+                    .icon-title {
+                        min-height: 48px;
+                    }
+
+                }
+
+            }
+        }
+
+        /*-============================= Section how-works - end =============================-*/
+        /*-============================= Section how-get - start =============================-*/
+        .how-get {
+            margin-bottom: 51px;
+
+            h2 {
+                margin-bottom: 10px;
+
+                &.h-title {
+                    &::before {
+                        content: "";
+                        width: 100px;
+                        height: 155px;
+                        top: 80%;
+                    }
+                }
+
+            }
+
+            .get-steps {
+                .step {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    row-gap: 25px;
+                    margin-bottom: 15px;
+                    position: relative;
+
+                    &.first {
+                        flex-direction: row;
+                        row-gap: 10px;
+                        margin-bottom: 80px;
+                        justify-content: space-between;
+
+                        .num-wrap {
+                            flex-direction: row;
+                            flex-basis: 56%;
+                        }
+
+                        .step-description {
+
+                            &::after {
+                                content: '';
+                                left: 60%;
+                                bottom: 70%;
+                                transform: translate(-50%, 50%) rotate(-25deg);
+
+                                @media screen and (min-width: 1135px) {
+                                    left: 55%;
+                                    bottom: 60%;
+                                    transform: translate(-50%, 80%) rotate(-25deg);
+                                }
+                            }
+                        }
+
+                        .step-img {
+                            align-self: flex-end;
+                            flex-basis: 38%;
+                        }
+
+                        .step-num {
+                            align-self: flex-start;
+                            margin-left: 0;
+                            margin-right: 10px;
+                        }
+
+                    }
+
+                    &.second {
+                        margin-bottom: 24px;
+                        flex-direction: row-reverse;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .num-wrap {
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 20px;
+                            flex-basis: 46%;
+                            margin-left: 0;
+
+                            .step-num {
+                                position: static;
+                            }
+                        }
+
+                        .with-img {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                        }
+
+                        .descr-img {
+                            min-width: 88px;
+                        }
+
+                        .step-img {
+                            align-self: flex-end;
+                            aspect-ratio: 338/185;
+                            flex-basis: 50%;
+                        }
+
+                    }
+
+                    &.third {
+                        margin-bottom: 50px;
+                        flex-direction: row-reverse;
+
+                        &::after {
+                            background-image: none;
+                        }
+
+                        .step-img {
+                            flex-basis: 50%;
+                            max-height: 100px;
+                            text-align: center;
+
+                            img {
+                                max-width: 100px;
+                            }
+                        }
+
+                        .step-description {
+                            max-width: 168px;
+                        }
+
+                        .num-wrap {
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 20px;
+                            flex-basis: 46%;
+                        }
+
+                    }
+
+                    &.fourth {
+                        margin-bottom: 62px;
+                        flex-direction: row-reverse;
+                        justify-content: space-between;
+
+                        &::before {
+                            left: 50%;
+                            bottom: 0;
+                            transform: translate(-50%, 100%) scale(1, 1) rotate(90deg);
+                        }
+
+                        .step-img {
+                            flex-basis: 44%;
+                        }
+
+                        .num-wrap {
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 20px;
+                            flex-basis: 46%;
+                            margin-right: 0;
+                        }
+
+                    }
+
+                    &.fifth {
+                        .num-wrap {
+                            gap: 35px;
+                            align-items: end;
+                            margin-left: -4rem;
+                        }
+
+                        .step-btn {
+                            button {
+                                background-color: #0D6EFD;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        /*-============================= Section how-get - end =============================-*/
+        /*-============================= Section cashback-percent - start =============================-*/
+
+        .cashback-percent {
+            margin-bottom: 89px;
+
+            .title-block {
+                margin-bottom: 15px;
+                flex-direction: row;
+
+                justify-content: space-between;
+
+                .title {
+                    flex-basis: 40%;
+                }
+
+                p {
+                    flex-basis: 55%;
+                }
+            }
+
+            .range {
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 38px;
+
+                .data {
+                    flex-grow: 1;
+                    column-gap: 10px;
+
+                    .data-item {
+                        flex-basis: 40%;
+
+                        @media screen and (min-width: 1135px) {
+                            flex-basis: 43%;
+                        }
+
+                        .data-img {
+                            aspect-ratio: 1;
+                            max-width: 159px;
+                            margin-inline: auto;
+
+                            &.long {
+                                aspect-ratio: 183/53;
+                                max-width: 183px;
+                            }
+
+                            &.time {
+                                max-width: 113px;
+                            }
+                        }
+
+                        &.percent {
+                            text-align: left;
+                            @include fz(60);
+                            font-weight: 900;
+                            flex-basis: 62%;
+
+                            @media screen and (min-width: 1135px) {
+                                flex-basis: 52%;
+                            }
+                        }
+                    }
+                }
+
+                &.last {
+                    flex-direction: row;
+                    margin-bottom: 34px;
+
+                    .data {
+                        .data-item {
+                            flex-basis: 40%;
+
+                            @media screen and (min-width: 1135px) {
+                                flex-basis: 43%;
+                            }
+
+                            &.percent {
+                                flex-basis: 62%;
+
+                                @media screen and (min-width: 1135px) {
+                                    flex-basis: 52%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .info-range {
+                max-width: 398px;
+            }
+        }
+
+        /*-============================= Section cashback-percent - end =============================-*/
+        /*-============================= Section no-cashback - start =============================-*/
+
+        .no-cashback {
+            padding-bottom: 70px;
+
+            .title {
+                max-width: 300px;
+            }
+
+            .block-items {
+                .item {
+                    column-gap: 20px;
+                }
+
+                .item-img {
+                    flex-basis: 48%;
+                    align-self: flex-start;
+                    margin-inline: auto;
+
+                    &.first {
+                        aspect-ratio: 191/74;
+                        max-width: 191px;
+                        align-self: center;
+                    }
+
+                    &.second {
+                        aspect-ratio: 99/108;
+                        max-width: 99px;
+                    }
+
+                    &.third {
+                        aspect-ratio: 109/79;
+                        max-width: 109px;
+                    }
+                }
+
+                .item-text {
+                    flex-basis: 70%;
+                }
+            }
+        }
+
+        /*-============================= Section no-cashback - end =============================-*/
+        /*-============================= Section how-to-pin - start =============================-*/
+        .how-to-pin {
+            margin-bottom: 39px;
+
+            .title {
+                max-width: 385px;
+            }
+
+            .h-title {
+                margin-bottom: 40px;
+            }
+
+            .browser-tabs {
+                margin-left: -23px;
+                padding-bottom: 0;
+
+                .tabs {
+                    display: flex;
+                    justify-content: start;
+
+                    .tab {
+                        flex-grow: 0;
+                        min-width: 109px;
+                    }
+                }
+
+                .tab-content {
+                    display: none;
+                    padding: 45px 14px 25px 14px;
+                    border-radius: 0px 0px 5px 5px;
+                    border: 1px solid #D9D9D9;
+                    background: #FFF;
+                    position: relative;
+
+                    &.active {
+                        display: block;
+                        z-index: 2;
+                    }
+
+                    p {
+                        margin-bottom: 12px;
+                    }
+
+                    .details {
+                        text-align: center;
+                        padding-bottom: 0;
+                    }
+                }
+
+                .instruction {
+                    counter-reset: ol-numbers;
+                    margin-bottom: 40px;
+
+                    li {
+                        position: relative;
+                        padding: 0;
+                        margin-bottom: 12px;
+                        padding-left: 20px;
+
+                        &::before {
+                            background-image: none;
+                            counter-increment: ol-numbers;
+                            content: counter(ol-numbers) '.';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+
+                            width: 40px;
+                            text-align: left;
+                        }
+
+                        &:first-child {
+                            &::before {
+                                top: 0;
+                                transform: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /*-============================= Section how-to-pin - end =============================-*/
+        /*-============================= Section total-cashback - start =============================-*/
+        .total-cashback {
+            .title {
+                max-width: 330pxx;
+            }
+
+            .h-title {
+                margin-bottom: 25px;
+            }
+
+            .check-items ul {
+
+                li {
+
+                    &:first-child {
+                        &::before {
+                            top: 0;
+                            transform: none;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    /*-============================= Section total-cashback - end =============================-*/
+}

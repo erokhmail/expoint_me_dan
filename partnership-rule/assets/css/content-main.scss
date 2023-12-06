@@ -1,0 +1,749 @@
+#content {
+    &.partnership-cashback {
+
+        @mixin fz($px_size) {
+            font-size: ($px_size / 16) * 1rem;
+        }
+
+        @mixin lh($px_size) {
+            line-height: ($px_size / 16) * 1rem;
+        }
+
+        color: #333;
+        font-weight: 300;
+        @include fz(16);
+        @include lh(24);
+
+        *,
+        *::before,
+        *::after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            vertical-align: top;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a,
+        button {
+            transition: all .2s ease;
+        }
+
+        a {
+            color: #3B5998;
+            text-decoration: underline;
+            opacity: 1;
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+
+        button {
+            border: 0;
+            background-color: unset;
+        }
+
+        section {
+            scroll-margin-top: 30px;
+        }
+
+        .title {
+
+            h1,
+            h2 {
+                color: #333;
+                font-weight: 400;
+                @include fz(27);
+                @include lh(45);
+                text-transform: uppercase;
+                margin-bottom: 39px;
+
+                &.h-title {
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        width: 74px;
+                        height: 117px;
+                        background-image: url(../images/q-icon.svg);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        z-index: -1;
+                        top: 50%;
+                        left: 55%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+
+        .scroll-nav {
+            margin-bottom: 50px;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 15px;
+
+                li {
+                    list-style: none;
+                    background-color: #ECECEC;
+                    padding: 12px 21px;
+                    border-radius: 5px;
+                    text-align: center;
+                    transition: all .2s ease;
+
+                    .scroll-link {
+                        color: #333;
+                        @include fz(14);
+                        font-weight: 500;
+                        text-decoration: none;
+
+                    }
+
+                    &:hover {
+                        background-color: #3B5998;
+                        cursor: pointer;
+
+                        .scroll-link {
+                            color: #fff;
+                            opacity: 1;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .title {
+            h1 {
+                color: #333;
+                @include fz(27);
+                @include lh(45);
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-bottom: 39px;
+
+                &.h-title {
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        width: 74px;
+                        height: 117px;
+                        background-image: url(../images/q-icon.svg);
+                        background-size: 100%;
+                        position: absolute;
+                        z-index: -1;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+
+        .check-items {
+            ul {
+                li {
+                    list-style: none;
+                    margin-bottom: 23px;
+                    position: relative;
+                    padding: 0 6px 0 47px;
+
+                    &::before {
+                        content: '';
+                        width: 37px;
+                        height: 39px;
+                        background-image: url(../images/list-marker.svg);
+                        position: absolute;
+                        top: 2px;
+                        left: 0;
+                    }
+
+                    span {
+                        display: inline-block;
+                        @include fz(13);
+                        padding-right: 6px;
+                    }
+
+                }
+            }
+        }
+
+        /*-============================= Section how-works - start =============================-*/
+        .how-works {
+            margin-bottom: 79px;
+
+            .icon-blocks {
+                color: #333;
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                row-gap: 26px;
+
+                .icon-block {
+                    flex: 0 1 47%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: start;
+                    text-align: center;
+
+                    &.w-100 {
+                        flex: 0 1 100%;
+                        margin-bottom: 14px;
+                    }
+
+                    &.step-1 {
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            width: 52px;
+                            height: 29px;
+                            background-image: url(../images/st-1-arrow.svg);
+                            position: absolute;
+                            top: 35%;
+                            left: 100%;
+                            transform: translate(-40%, -50%);
+                        }
+                    }
+
+                    &.step-2 {
+                        flex: 0 1 45%;
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            width: 51px;
+                            height: 47px;
+                            background-image: url(../images/st-2-arrow.svg);
+                            position: absolute;
+                            right: 20%;
+                            bottom: -40%;
+                            transform: translate(25%, -50%);
+                        }
+                    }
+
+                    .icon {
+                        width: 94px;
+                        height: 94px;
+                        margin-bottom: 18px;
+                    }
+
+                    .icon-title {
+                        @include fz(18);
+                        @include lh(24);
+                        font-weight: 700;
+                        max-width: 129px;
+                        margin-bottom: 4px;
+                    }
+
+                }
+
+            }
+        }
+
+        /*-============================= Section how-works - end =============================-*/
+        /*-============================= Section how-get - start =============================-*/
+        .how-get {
+            margin-bottom: 45px;
+
+            h2 {
+                margin-bottom: 0;
+            }
+
+            .step-num {
+                height: 65px;
+                width: auto;
+                min-width: 45px;
+            }
+
+            .get-steps {
+                .step {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    row-gap: 25px;
+                    margin-bottom: 15px;
+                    position: relative;
+
+                    .num-wrap {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
+                    .step-img {
+                        position: relative;
+                        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+
+                        a {
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            z-index: 2;
+                        }
+                    }
+
+                    &.first {
+                        @media screen and (min-width: 376px) {
+                            margin-bottom: 30px;
+                        }
+
+                        .step-description {
+                            min-height: 115px;
+
+                            &::after {
+                                content: '';
+                                width: 58px;
+                                height: 58px;
+                                background-image: url(../images/step-arrow.svg);
+                                position: absolute;
+                                left: 50%;
+                                bottom: 27%;
+                                transform: translate(-50%, 45%);
+
+                                @media screen and (min-width: 376px) {
+                                    bottom: 30%;
+                                }
+                            }
+                        }
+
+                        .step-img {
+                            aspect-ratio: 289/50;
+                            max-width: 289px;
+                        }
+
+                    }
+
+                    &.second {
+                        margin-bottom: 40px;
+
+                        .num-wrap {
+                            flex-direction: row;
+                            align-items: flex-start;
+                            gap: 12px;
+                        }
+
+                        .with-img {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                        }
+
+                        .descr-img {
+                            min-width: 88px;
+                        }
+
+                        .step-img {
+                            aspect-ratio: 288/406;
+                        }
+
+                    }
+
+                    &.third {
+                        margin-bottom: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        &::after {
+                            content: '';
+                            width: 58px;
+                            height: 58px;
+                            background-image: url(../images/step-arrow.svg);
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            transform: translate(-50%, 100%) rotate(90deg);
+                        }
+
+                        .step-num {
+                            height: 50px;
+                            min-width: 35px;
+                            margin-bottom: 10px;
+                        }
+
+                        .num-wrap {
+                            flex: 0 1 43%;
+                        }
+
+                        .step-img {
+                            flex: 0 1 43%;
+                            aspect-ratio: 109/112;
+                            box-shadow: unset;
+                            margin-right: 30px;
+                        }
+                    }
+
+                    &.fourth {
+                        margin-bottom: 62px;
+
+                        &::before {
+                            content: '';
+                            width: 58px;
+                            height: 58px;
+                            background-image: url(../images/step-arrow.svg);
+                            position: absolute;
+                            left: 0;
+                            bottom: -25%;
+                            transform: translate(-25%, 45%) scale(-1, 1) rotate(90deg);
+                        }
+
+                        .num-wrap {
+                            flex-direction: row;
+                            align-items: flex-start;
+                            gap: 12px;
+                        }
+
+                        .step-num {
+                            height: 50px;
+                            min-width: 35px;
+                        }
+
+                        .step-img {
+                            aspect-ratio: 338/62;
+                        }
+                    }
+
+                    &.fifth {
+
+                        .num-wrap {
+                            flex-direction: row;
+                            align-items: flex-start;
+                            gap: 12px;
+                        }
+
+                        .step-num {
+                            height: 50px;
+                            min-width: 35px;
+                        }
+                    }
+
+                    .step-btn {
+                        button {
+                            background-color: #3B5998;
+                            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+                            padding: 12px 28px;
+                            border-radius: 5px;
+                            text-align: center;
+                            color: #fff;
+                            @include fz(16);
+                            @include lh(24);
+                            font-weight: 500;
+                            cursor: unset;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        /*-============================= Section how-get - end =============================-*/
+        /*-============================= Section cashback-percent - start =============================-*/
+
+        .cashback-percent {
+            margin-bottom: 63px;
+
+            .title-block {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 8px;
+            }
+
+            h2 {
+                margin-bottom: 12px;
+            }
+
+            .range {
+                margin-bottom: 26px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .data {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    column-gap: 15px;
+                    width: 100%;
+                    margin-bottom: 13px;
+
+                    .data-item {
+                        flex: 0 1 43%;
+
+                        .data-img {
+                            aspect-ratio: 1;
+                            max-width: 111px;
+
+                            &.long {
+                                aspect-ratio: 129/24;
+                                max-width: 129px;
+                            }
+
+                            &.time {
+                                aspect-ratio: 106/108;
+                                max-width: 106px;
+                            }
+                        }
+
+                        &.percent {
+                            color: #3B5998;
+                            @include fz(40);
+                            @include lh(24);
+                            font-weight: 900;
+                            flex: 0 1 52%;
+                        }
+                    }
+                }
+            }
+
+            .info-range {
+                border-radius: 5px;
+                background: #FFF;
+                box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+                padding: 10px 23px;
+                text-align: center;
+
+                span {
+                    color: #3B5998;
+                    @include fz(20);
+                    @include lh(24);
+                    font-weight: 700;
+                }
+            }
+        }
+
+        /*-============================= Section cashback-percent - end =============================-*/
+        /*-============================= Section no-cashback - start =============================-*/
+
+        .no-cashback {
+            h2 {
+                letter-spacing: -0.81px;
+                margin-bottom: 12px;
+            }
+
+            .block-items {
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 25px;
+                    margin-bottom: 42px;
+                }
+
+                .item-img {
+                    &.first {
+                        aspect-ratio: 191/74;
+                        max-width: 191px;
+                    }
+                }
+
+                .item-text {
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .title {
+                        @include fz(18);
+                        font-weight: 700;
+                        margin-bottom: 8px;
+                        max-width: 220px;
+                    }
+
+                    .description {
+                        padding: 0 5px;
+                    }
+
+                    &.second {
+                        .title {
+                            max-width: 180px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*-============================= Section no-cashback - end =============================-*/
+        /*-============================= Section how-to-pin - start =============================-*/
+        .how-to-pin {
+            margin-bottom: 56px;
+
+            .browser-tabs {
+                margin-top: 83px;
+                margin-left: -47px;
+                padding-bottom: 23px;
+
+                .tabs {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: -4px;
+                    column-gap: 2px;
+                    height: 63px;
+
+                    .tab {
+                        padding: 8px 10px 10px 8px;
+                        align-self: flex-end;
+                        flex-grow: 1;
+                        text-align: center;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        background: #FFF;
+                        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+                        display: flex;
+                        justify-content: center;
+                        opacity: 1;
+                        transition: all .2s ease;
+
+                        .name {
+                            display: none;
+                        }
+
+                        .icon {
+                            aspect-ratio: 1;
+                            max-width: 30px;
+                        }
+
+                        &.active-top {
+                            padding: 15px;
+                            align-items: center;
+                            column-gap: 6px;
+                            position: relative;
+                            border: 1px solid #ccc;
+
+                            &::after {
+                                content: '';
+                                width: 100%;
+                                height: 5px;
+                                background-color: #fff;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                z-index: 3;
+                            }
+
+                            .name {
+                                display: block;
+                                @include fz(18);
+                                font-weight: 700;
+                            }
+
+                            .icon {
+                                aspect-ratio: 1;
+                                max-width: 46px;
+                            }
+                        }
+                    }
+                }
+
+                .tab-content {
+                    display: none;
+                    padding: 19px 14px;
+                    border-radius: 0px 0px 5px 5px;
+                    border: 1px solid #D9D9D9;
+                    background: #FFF;
+                    position: relative;
+
+                    &.active {
+                        display: block;
+                        z-index: 2;
+                    }
+
+                    p {
+                        margin-bottom: 12px;
+                    }
+
+                    .details {
+                        text-align: center;
+                        padding-bottom: 10px;
+                    }
+                }
+
+                .instruction {
+                    counter-reset: ol-numbers;
+
+                    li {
+                        position: relative;
+                        padding: 0;
+                        margin-bottom: 12px;
+
+                        &::before {
+                            background-image: none;
+                            // counter-increment: ol-numbers;
+                            // content: counter(ol-numbers) '.';
+                            // position: absolute;
+                            // top: 0;
+                            // left: 0;
+
+                            // width: 40px;
+                            // text-align: left;
+                            // color: #3B5998;
+                        }
+
+                        &:last-of-type {
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*-============================= Section how-to-pin - end =============================-*/
+        /*-============================= Section total-cashback - start =============================-*/
+        .total-cashback {
+            margin-bottom: 170px;
+
+            .check-items {
+                ul {
+                    li {
+                        padding: 0 6px 0 60px;
+                    }
+                }
+            }
+
+            .preview {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 15px;
+                gap: 12px;
+
+                .prev-img {
+                    aspect-ratio: 49/51;
+                    max-width: 49px;
+                    flex: 0 1 17%;
+                }
+
+                .prev-descr {
+                    flex: 0 1 75%;
+                }
+            }
+        }
+    }
+
+    /*-============================= Section total-cashback - end =============================-*/
+}
+
+
+#content.partnership-cashback li strong {
+    font-weight: 600 !important;
+}

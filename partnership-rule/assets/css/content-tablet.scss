@@ -1,0 +1,496 @@
+#content {
+    &.partnership-cashback {
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+
+        @mixin fz($px_size) {
+            font-size: ($px_size / 16) * 1rem;
+        }
+
+        @mixin lh($px_size) {
+            line-height: ($px_size / 16) * 1rem;
+        }
+
+        section {
+            scroll-margin-top: 30px;
+        }
+
+
+        .scroll-nav {
+            margin-bottom: 50px;
+
+            ul {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: start;
+                column-gap: 19px;
+                row-gap: 21px;
+
+                li {
+                    padding: 12px 15px;
+                    flex-grow: 1;
+
+                    &:nth-child(1) {
+                        order: 1;
+                    }
+
+                    &:nth-child(2) {
+                        order: 3;
+                    }
+
+                    &:nth-child(3) {
+                        order: 5;
+                        width: 100%;
+                    }
+
+                    &:nth-child(4) {
+                        order: 2;
+                    }
+
+                    &:nth-child(5) {
+                        order: 6;
+                        flex-grow: 0;
+                    }
+
+                    &:nth-child(6) {
+                        order: 4;
+                    }
+                }
+            }
+        }
+
+        .title {
+            max-width: 269px;
+        }
+
+        .check-items {
+            ul {
+                li {
+                    list-style: none;
+                    margin-bottom: 23px;
+                    position: relative;
+                    padding: 0 6px 0 47px;
+
+                    &::before {
+                        content: '';
+                        width: 37px;
+                        height: 39px;
+                        background-image: url(../images/list-marker.svg);
+                        position: absolute;
+                        top: 2px;
+                        left: 0;
+                    }
+
+                    span {
+                        display: inline-block;
+                        @include fz(13);
+                        padding-right: 6px;
+                    }
+
+                }
+            }
+        }
+
+        /*-============================= Section how-works - start =============================-*/
+        .how-works {
+            margin-bottom: 68px;
+
+            .icon-blocks {
+                flex-wrap: nowrap;
+                row-gap: 26px;
+
+                .icon-block {
+                    flex: 0 1 32%;
+
+                    &.w-100 {
+                        flex: 0 1 32%;
+                        margin-bottom: 14px;
+                    }
+
+                    &.step-2 {
+                        flex: 0 1 32%;
+
+                        &::after {
+                            content: '';
+                            right: unset;
+                            bottom: unset;
+                            top: 35%;
+                            left: 100%;
+                            transform: translate(-40%, -50%) rotate(180deg);
+                        }
+                    }
+
+                    .icon-title {
+                        min-height: 48px;
+                    }
+
+                }
+
+            }
+        }
+
+        /*-============================= Section how-works - end =============================-*/
+        /*-============================= Section how-get - start =============================-*/
+        .how-get {
+            margin-bottom: 45px;
+
+            h2 {
+                margin-bottom: 10px;
+            }
+
+            .get-steps {
+                .step {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    row-gap: 25px;
+                    margin-bottom: 15px;
+                    position: relative;
+
+                    &.first {
+                        row-gap: 10px;
+                        margin-bottom: 80px;
+
+                        .num-wrap {
+                            flex-direction: column-reverse;
+                        }
+
+                        .step-description {
+                            min-height: 80px;
+
+                            &::after {
+                                content: '';
+                                left: 65%;
+                                bottom: 70%;
+                                transform: translate(-50%, 80%);
+                            }
+                        }
+
+                        .step-img {
+                            align-self: flex-end;
+                        }
+
+                        .step-num {
+                            align-self: center;
+                            margin-left: -5rem;
+                        }
+
+                    }
+
+                    &.second {
+                        margin-bottom: 59px;
+                        flex-direction: row;
+                        align-items: start;
+                        justify-content: space-between;
+
+                        .num-wrap {
+                            flex-direction: row;
+                            align-items: flex-start;
+                            gap: 12px;
+                            flex-basis: 25%;
+                            position: relative;
+                            margin-left: 17px;
+
+                            .step-num {
+                                position: absolute;
+                                z-index: -1;
+                                left: -17px;
+                                top: 43%;
+                            }
+                        }
+
+                        .with-img {
+                            display: flex;
+                            flex-direction: column-reverse;
+                            align-items: flex-start;
+                        }
+
+                        .descr-img {
+                            min-width: 88px;
+                        }
+
+                        .step-img {
+                            align-self: flex-end;
+                        }
+
+                    }
+
+                    &.third {
+                        margin-bottom: 50px;
+
+                        .step-img {
+                            flex: 0 1 40%;
+                        }
+
+                        &::after {
+                            right: 15%;
+                            bottom: -6%;
+                            transform: translate(-25%, 100%) rotate(110deg);
+                        }
+
+                        .num-wrap {
+                            flex: 1 1 43%;
+                        }
+
+                    }
+
+                    &.fourth {
+                        margin-bottom: 95px;
+
+                        &::before {
+                            left: 10%;
+                            bottom: -20%;
+                            transform: translate(-25%, 100%) scale(-1, 1) rotate(90deg);
+                        }
+
+                        .step-description {
+                            max-width: 266px;
+                        }
+
+                        .num-wrap {
+                            margin-right: auto;
+                        }
+                    }
+
+                    &.fifth {
+                        .num-wrap {
+                            gap: 35px;
+                            align-items: end;
+                            margin-left: -4rem;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        /*-============================= Section how-get - end =============================-*/
+        /*-============================= Section cashback-percent - start =============================-*/
+
+        .cashback-percent {
+            margin-bottom: 63px;
+
+            .title-block {
+                margin-bottom: 15px;
+            }
+
+            .range {
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 38px;
+
+                .data {
+                    flex-grow: 1;
+                    column-gap: 10px;
+
+                    .data-item {
+
+                        .data-img {
+                            aspect-ratio: 1;
+                            max-width: 111px;
+
+                            &.long {
+                                aspect-ratio: 183/53;
+                                max-width: 129px;
+                            }
+
+                            &.time {
+                                aspect-ratio: 106/108;
+                                max-width: 106px;
+                            }
+                        }
+
+                        &.percent {
+                            text-align: center;
+                        }
+                    }
+                }
+
+                &.last {
+                    flex-direction: column;
+                    margin-bottom: 34px;
+
+                    .data {
+                        .data-item {
+                            flex-basis: 30%;
+
+                            &.percent {
+                                flex-basis: 34%;
+                            }
+                        }
+                    }
+
+                    .descr {
+                        max-width: 375px;
+                    }
+                }
+
+                .descr {
+                    flex: 1 1 60%;
+                }
+            }
+
+            .info-range {
+                max-width: 291px;
+                margin-inline: auto;
+            }
+        }
+
+        /*-============================= Section cashback-percent - end =============================-*/
+        /*-============================= Section no-cashback - start =============================-*/
+
+        .no-cashback {
+            padding-bottom: 26px;
+
+            .block-items {
+                .item {
+                    flex-direction: row;
+                    align-items: center;
+                    row-gap: 25px;
+                    column-gap: 46px;
+                    justify-content: space-between;
+                }
+
+                .item-img {
+                    flex-basis: 48%;
+                    align-self: flex-start;
+                    margin-inline: auto;
+
+                    &.first {
+                        aspect-ratio: 191/74;
+                        max-width: 191px;
+                        align-self: center;
+                    }
+
+                    &.second {
+                        aspect-ratio: 99/108;
+                        max-width: 99px;
+                    }
+
+                    &.third {
+                        aspect-ratio: 109/79;
+                        max-width: 109px;
+                    }
+                }
+
+                .item-text {
+                    flex-basis: 48%;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .title {
+                        margin-right: auto;
+                    }
+
+                    &.second {
+                        .title {
+                            max-width: 180px;
+                        }
+                    }
+
+                    .description {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        /*-============================= Section no-cashback - end =============================-*/
+        /*-============================= Section how-to-pin - start =============================-*/
+        .how-to-pin {
+            margin-bottom: 43px;
+
+            .h-title {
+                margin-bottom: 55px;
+            }
+
+            .browser-tabs {
+                margin-top: 104px;
+                padding-bottom: 35px;
+
+                .tabs {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: -4px;
+                    column-gap: 2px;
+                    height: 63px;
+
+                    .tab {
+                        flex-direction: column;
+                        align-items: center;
+
+                        .name {
+                            display: block;
+                            @include fz(18);
+                            font-weight: 700;
+                        }
+
+                        .icon {
+                            width: 55px;
+                            height: auto;
+                            max-width: 55px;
+                        }
+
+                        &.active-top {
+                            flex-direction: row;
+
+                            .name {
+                                display: block;
+                                @include fz(18);
+                                font-weight: 700;
+                            }
+
+                            .icon {
+                                width: 84px;
+                                height: auto;
+                                max-width: 84px;
+                            }
+                        }
+                    }
+                }
+
+                .tab-content {
+                    padding: 19px 14px 14px;
+
+                    p {
+                        margin-bottom: 12px;
+                    }
+
+                    .details {
+                        padding-bottom: 0;
+                    }
+                }
+
+                .instruction {
+                    counter-reset: ol-numbers;
+                    margin-bottom: 9px;
+
+                    li {
+                        position: relative;
+                        padding: 0;
+                        margin-bottom: 12px;
+
+                        &:last-of-type {
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*-============================= Section how-to-pin - end =============================-*/
+        /*-============================= Section total-cashback - start =============================-*/
+        .total-cashback {
+
+            .h-title {
+                margin-bottom: 25px;
+            }
+
+        }
+    }
+
+    /*-============================= Section total-cashback - end =============================-*/
+}
