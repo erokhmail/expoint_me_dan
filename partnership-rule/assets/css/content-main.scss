@@ -496,8 +496,8 @@
                             max-width: 111px;
 
                             &.long {
-                                aspect-ratio:183/53;
-                                max-width: 129px;
+                                aspect-ratio: 183/53;
+                                max-width: unset;
                             }
 
                             &.time {

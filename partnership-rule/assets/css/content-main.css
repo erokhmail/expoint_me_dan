@@ -407,7 +407,7 @@
 }
 #content.partnership-cashback .cashback-percent .range .data .data-item .data-img.long {
   aspect-ratio: 183/53;
-  max-width: 129px;
+  max-width: unset;
 }
 #content.partnership-cashback .cashback-percent .range .data .data-item .data-img.time {
   aspect-ratio: 106/108;
