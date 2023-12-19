@@ -211,6 +211,7 @@
 
                         .step-img {
                             align-self: flex-end;
+                            min-height: 166px;
                         }
 
                     }
@@ -249,6 +250,10 @@
 
                         .num-wrap {
                             margin-right: auto;
+                        }
+
+                        .step-img {
+                            min-height: 52px;
                         }
                     }
 

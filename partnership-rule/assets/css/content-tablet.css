@@ -171,6 +171,7 @@
 }
 #content.partnership-cashback .how-get .get-steps .step.second .step-img {
   align-self: flex-end;
+  min-height: 166px;
 }
 #content.partnership-cashback .how-get .get-steps .step.third {
   margin-bottom: 50px;
@@ -199,6 +200,9 @@
 }
 #content.partnership-cashback .how-get .get-steps .step.fourth .num-wrap {
   margin-right: auto;
+}
+#content.partnership-cashback .how-get .get-steps .step.fourth .step-img {
+  min-height: 52px;
 }
 #content.partnership-cashback .how-get .get-steps .step.fifth .num-wrap {
   gap: 35px;

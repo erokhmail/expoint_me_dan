@@ -296,6 +296,7 @@
 }
 #content.partnership-cashback .how-get .get-steps .step.second .step-img {
   aspect-ratio: 288/406;
+  min-height: 406px;
 }
 #content.partnership-cashback .how-get .get-steps .step.third {
   margin-bottom: 50px;
@@ -351,6 +352,12 @@
 }
 #content.partnership-cashback .how-get .get-steps .step.fourth .step-img {
   aspect-ratio: 338/62;
+  min-height: 52px;
+}
+@media screen and (min-width: 375px) {
+  #content.partnership-cashback .how-get .get-steps .step.fourth .step-img {
+    min-height: 62px;
+  }
 }
 #content.partnership-cashback .how-get .get-steps .step.fifth .num-wrap {
   flex-direction: row;
@@ -446,7 +453,20 @@
 }
 #content.partnership-cashback .no-cashback .block-items .item-img.first {
   aspect-ratio: 191/74;
-  max-width: 191px;
+  min-height: 86px;
+}
+@media screen and (min-width: 375px) {
+  #content.partnership-cashback .no-cashback .block-items .item-img.first {
+    min-height: 132px;
+  }
+}
+#content.partnership-cashback .no-cashback .block-items .item-img.second {
+  aspect-ratio: 99/108;
+  min-height: 99px;
+}
+#content.partnership-cashback .no-cashback .block-items .item-img.third {
+  aspect-ratio: 56/41;
+  min-height: 82px;
 }
 #content.partnership-cashback .no-cashback .block-items .item-text {
   text-align: center;
@@ -473,6 +493,12 @@
   margin-top: 83px;
   margin-left: -47px;
   padding-bottom: 23px;
+  min-height: 401px;
+}
+@media screen and (min-width: 375px) {
+  #content.partnership-cashback .how-to-pin .browser-tabs {
+    min-height: 380px;
+  }
 }
 #content.partnership-cashback .how-to-pin .browser-tabs .tabs {
   display: flex;
