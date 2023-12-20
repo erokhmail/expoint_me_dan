@@ -89,139 +89,136 @@
 
             }
 
-            .get-steps {
-                .step {
+            .step {
 
-                    &.first {
+                &.first {
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .num-wrap {
                         flex-direction: row;
-                        justify-content: space-between;
-
-                        .num-wrap {
-                            flex-direction: row;
-                            flex-basis: 55%;
-                        }
-
-                        .step-description {
-
-                            &::after {
-                                content: '';
-                                left: 60%;
-                                bottom: 70%;
-                                transform: translate(-50%, 50%) rotate(-25deg);
-
-                                @media screen and (min-width: 1135px) {
-                                    left: 55%;
-                                    bottom: 60%;
-                                    transform: translate(-50%, 80%) rotate(-25deg);
-                                }
-                            }
-                        }
-
-                        .step-img {
-                            flex-basis: 38%;
-                        }
-
-                        .step-num {
-                            align-self: flex-start;
-                            margin-left: 0;
-                            margin-right: 10px;
-                        }
-
+                        flex-basis: 55%;
                     }
 
-                    &.second {
-                        margin-bottom: 24px;
-                        flex-direction: row-reverse;
-                        align-items: center;
-
-                        .num-wrap {
-                            flex-direction: row;
-                            align-items: center;
-                            gap: 20px;
-                            flex-basis: 46%;
-                            margin-left: 0;
-
-                            .step-num {
-                                position: static;
-                            }
-                        }
-
-                        .with-img {
-                            flex-direction: row;
-                        }
-
-                        .step-img {
-                            align-self: flex-end;
-                            aspect-ratio: 378/185;
-                            flex-basis: 50%;
-                        }
-
-                    }
-
-                    &.third {
-                        flex-direction: row-reverse;
+                    .step-description {
 
                         &::after {
-                            background-image: none;
-                        }
+                            content: '';
+                            left: 60%;
+                            bottom: 70%;
+                            transform: translate(-50%, 50%) rotate(-25deg);
 
-                        .step-img {
-                            flex-basis: 50%;
-                            max-height: 100px;
-                            text-align: center;
-
-                            img {
-                                max-width: 100px;
+                            @media screen and (min-width: 1135px) {
+                                left: 55%;
+                                bottom: 60%;
+                                transform: translate(-50%, 80%) rotate(-25deg);
                             }
                         }
-
-                        .step-description {
-                            max-width: 168px;
-                        }
-
-                        .num-wrap {
-                            flex-direction: row;
-                            align-items: center;
-                            gap: 20px;
-                            flex-basis: 46%;
-                        }
-
                     }
 
-                    &.fourth {
-                        margin-bottom: 62px;
-                        flex-direction: row-reverse;
-                        justify-content: space-between;
-
-                        &::before {
-                            left: 50%;
-                            bottom: 0;
-                            transform: translate(-50%, 100%) scale(1, 1) rotate(90deg);
-                        }
-
-                        .step-img {
-                            flex-basis: 44%;
-                        }
-
-                        .num-wrap {
-                            flex-direction: row;
-                            align-items: center;
-                            gap: 20px;
-                            flex-basis: 46%;
-                            margin-right: 0;
-                        }
-
+                    .step-img {
+                        flex-basis: 38%;
                     }
 
-                    &.fifth {
-                        .step-btn {
-                            button {
-                                background-color: #0D6EFD;
-                            }
+                    .step-num {
+                        align-self: flex-start;
+                        margin-left: 0;
+                        margin-right: 10px;
+                    }
+
+                }
+
+                &.second {
+                    margin-bottom: 24px;
+                    flex-direction: row-reverse;
+                    align-items: center;
+
+                    .num-wrap {
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 20px;
+                        flex-basis: 46%;
+                        margin-left: 0;
+
+                        .step-num {
+                            position: static;
+                        }
+                    }
+
+                    .with-img {
+                        flex-direction: row;
+                    }
+
+                    .step-img {
+                        align-self: flex-end;
+                        aspect-ratio: 378/185;
+                        flex-basis: 50%;
+                    }
+
+                }
+
+                &.third {
+                    flex-direction: row-reverse;
+
+                    &::after {
+                        background-image: none;
+                    }
+
+                    .step-img {
+                        flex-basis: 50%;
+                        max-height: 100px;
+                        text-align: center;
+
+                        img {
+                            max-width: 100px;
+                        }
+                    }
+
+                    .step-description {
+                        max-width: 168px;
+                    }
+
+                    .num-wrap {
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 20px;
+                        flex-basis: 46%;
+                    }
+
+                }
+
+                &.fourth {
+                    margin-bottom: 62px;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+
+                    &::before {
+                        left: 50%;
+                        bottom: 0;
+                        transform: translate(-50%, 100%) scale(1, 1) rotate(90deg);
+                    }
+
+                    .step-img {
+                        flex-basis: 44%;
+                    }
+
+                    .num-wrap {
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 20px;
+                        flex-basis: 46%;
+                        margin-right: 0;
+                    }
+
+                }
+
+                &.fifth {
+                    .step-btn {
+                        button {
+                            background-color: #0D6EFD;
                         }
                     }
                 }
-
             }
 
         }
@@ -247,63 +244,56 @@
 
             .range {
                 margin-bottom: 38px;
+            }
 
-                .data {
+            .data-item {
+                flex-basis: 40%;
 
-                    .data-item {
-                        flex-basis: 40%;
+                @media screen and (min-width: 1135px) {
+                    flex-basis: 43%;
+                }
 
-                        @media screen and (min-width: 1135px) {
-                            flex-basis: 43%;
-                        }
+                .data-img {
+                    max-width: 159px;
+                    margin-inline: auto;
 
-                        .data-img {
-                            max-width: 159px;
-                            margin-inline: auto;
+                    &.long {
+                        aspect-ratio: 183/53;
+                        max-width: 183px;
+                    }
 
-                            &.long {
-                                aspect-ratio: 183/53;
-                                max-width: 183px;
-                            }
-
-                            &.time {
-                                max-width: 113px;
-                            }
-                        }
-
-                        &.percent {
-                            text-align: left;
-                            @include fz(60);
-                            font-weight: 900;
-                            flex-basis: 62%;
-
-                            @media screen and (min-width: 1135px) {
-                                flex-basis: 52%;
-                            }
-                        }
+                    &.time {
+                        max-width: 113px;
                     }
                 }
 
-                &.last {
-                    flex-direction: row;
-                    margin-bottom: 34px;
+                &.percent {
+                    text-align: left;
+                    @include fz(60);
+                    font-weight: 900;
+                    flex-basis: 62%;
 
-                    .data {
-                        .data-item {
-                            flex-basis: 40%;
+                    @media screen and (min-width: 1135px) {
+                        flex-basis: 52%;
+                    }
+                }
+            }
 
-                            @media screen and (min-width: 1135px) {
-                                flex-basis: 43%;
-                            }
 
-                            &.percent {
-                                flex-basis: 62%;
 
-                                // @media screen and (min-width: 1135px) {
-                                //     flex-basis: 52%;
-                                // }
-                            }
-                        }
+            .last {
+                flex-direction: row;
+                margin-bottom: 34px;
+
+                .data-item {
+                    flex-basis: 40%;
+
+                    @media screen and (min-width: 1135px) {
+                        flex-basis: 43%;
+                    }
+
+                    &.percent {
+                        flex-basis: 62%;
                     }
                 }
 
@@ -324,14 +314,12 @@
                 max-width: 300px;
             }
 
-            .block-items {
-                .item {
-                    column-gap: 20px;
-                }
+            .item {
+                column-gap: 20px;
+            }
 
-                .item-text {
-                    flex-basis: 70%;
-                }
+            .item-text {
+                flex-basis: 70%;
             }
         }
 
@@ -354,11 +342,11 @@
 
                 .tabs {
                     justify-content: start;
+                }
 
-                    .tab {
-                        flex-grow: 0;
-                        min-width: 109px;
-                    }
+                .tab {
+                    flex-grow: 0;
+                    min-width: 109px;
                 }
 
                 .tab-content {
@@ -368,27 +356,27 @@
 
                 .instruction {
                     margin-bottom: 40px;
+                }
 
-                    li {
-                        padding-left: 20px;
+                li {
+                    padding-left: 20px;
 
+                    &::before {
+                        background-image: none;
+                        counter-increment: ol-numbers;
+                        content: counter(ol-numbers) '.';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+
+                        width: 40px;
+                        text-align: left;
+                    }
+
+                    &:first-child {
                         &::before {
-                            background-image: none;
-                            counter-increment: ol-numbers;
-                            content: counter(ol-numbers) '.';
-                            position: absolute;
                             top: 0;
-                            left: 0;
-
-                            width: 40px;
-                            text-align: left;
-                        }
-
-                        &:first-child {
-                            &::before {
-                                top: 0;
-                                transform: none;
-                            }
+                            transform: none;
                         }
                     }
                 }

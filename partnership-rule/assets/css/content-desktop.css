@@ -65,102 +65,102 @@
   height: 155px;
   top: 80%;
 }
-#content.partnership-cashback .how-get .get-steps .step.first {
+#content.partnership-cashback .how-get .step.first {
   flex-direction: row;
   justify-content: space-between;
 }
-#content.partnership-cashback .how-get .get-steps .step.first .num-wrap {
+#content.partnership-cashback .how-get .step.first .num-wrap {
   flex-direction: row;
   flex-basis: 55%;
 }
-#content.partnership-cashback .how-get .get-steps .step.first .step-description::after {
+#content.partnership-cashback .how-get .step.first .step-description::after {
   content: "";
   left: 60%;
   bottom: 70%;
   transform: translate(-50%, 50%) rotate(-25deg);
 }
 @media screen and (min-width: 1135px) {
-  #content.partnership-cashback .how-get .get-steps .step.first .step-description::after {
+  #content.partnership-cashback .how-get .step.first .step-description::after {
     left: 55%;
     bottom: 60%;
     transform: translate(-50%, 80%) rotate(-25deg);
   }
 }
-#content.partnership-cashback .how-get .get-steps .step.first .step-img {
+#content.partnership-cashback .how-get .step.first .step-img {
   flex-basis: 38%;
 }
-#content.partnership-cashback .how-get .get-steps .step.first .step-num {
+#content.partnership-cashback .how-get .step.first .step-num {
   align-self: flex-start;
   margin-left: 0;
   margin-right: 10px;
 }
-#content.partnership-cashback .how-get .get-steps .step.second {
+#content.partnership-cashback .how-get .step.second {
   margin-bottom: 24px;
   flex-direction: row-reverse;
   align-items: center;
 }
-#content.partnership-cashback .how-get .get-steps .step.second .num-wrap {
+#content.partnership-cashback .how-get .step.second .num-wrap {
   flex-direction: row;
   align-items: center;
   gap: 20px;
   flex-basis: 46%;
   margin-left: 0;
 }
-#content.partnership-cashback .how-get .get-steps .step.second .num-wrap .step-num {
+#content.partnership-cashback .how-get .step.second .num-wrap .step-num {
   position: static;
 }
-#content.partnership-cashback .how-get .get-steps .step.second .with-img {
+#content.partnership-cashback .how-get .step.second .with-img {
   flex-direction: row;
 }
-#content.partnership-cashback .how-get .get-steps .step.second .step-img {
+#content.partnership-cashback .how-get .step.second .step-img {
   align-self: flex-end;
   aspect-ratio: 378/185;
   flex-basis: 50%;
 }
-#content.partnership-cashback .how-get .get-steps .step.third {
+#content.partnership-cashback .how-get .step.third {
   flex-direction: row-reverse;
 }
-#content.partnership-cashback .how-get .get-steps .step.third::after {
+#content.partnership-cashback .how-get .step.third::after {
   background-image: none;
 }
-#content.partnership-cashback .how-get .get-steps .step.third .step-img {
+#content.partnership-cashback .how-get .step.third .step-img {
   flex-basis: 50%;
   max-height: 100px;
   text-align: center;
 }
-#content.partnership-cashback .how-get .get-steps .step.third .step-img img {
+#content.partnership-cashback .how-get .step.third .step-img img {
   max-width: 100px;
 }
-#content.partnership-cashback .how-get .get-steps .step.third .step-description {
+#content.partnership-cashback .how-get .step.third .step-description {
   max-width: 168px;
 }
-#content.partnership-cashback .how-get .get-steps .step.third .num-wrap {
+#content.partnership-cashback .how-get .step.third .num-wrap {
   flex-direction: row;
   align-items: center;
   gap: 20px;
   flex-basis: 46%;
 }
-#content.partnership-cashback .how-get .get-steps .step.fourth {
+#content.partnership-cashback .how-get .step.fourth {
   margin-bottom: 62px;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-#content.partnership-cashback .how-get .get-steps .step.fourth::before {
+#content.partnership-cashback .how-get .step.fourth::before {
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 100%) scale(1, 1) rotate(90deg);
 }
-#content.partnership-cashback .how-get .get-steps .step.fourth .step-img {
+#content.partnership-cashback .how-get .step.fourth .step-img {
   flex-basis: 44%;
 }
-#content.partnership-cashback .how-get .get-steps .step.fourth .num-wrap {
+#content.partnership-cashback .how-get .step.fourth .num-wrap {
   flex-direction: row;
   align-items: center;
   gap: 20px;
   flex-basis: 46%;
   margin-right: 0;
 }
-#content.partnership-cashback .how-get .get-steps .step.fifth .step-btn button {
+#content.partnership-cashback .how-get .step.fifth .step-btn button {
   background-color: #0D6EFD;
 }
 #content.partnership-cashback .cashback-percent {
@@ -179,49 +179,49 @@
 #content.partnership-cashback .cashback-percent .range {
   margin-bottom: 38px;
 }
-#content.partnership-cashback .cashback-percent .range .data .data-item {
+#content.partnership-cashback .cashback-percent .data-item {
   flex-basis: 40%;
 }
 @media screen and (min-width: 1135px) {
-  #content.partnership-cashback .cashback-percent .range .data .data-item {
+  #content.partnership-cashback .cashback-percent .data-item {
     flex-basis: 43%;
   }
 }
-#content.partnership-cashback .cashback-percent .range .data .data-item .data-img {
+#content.partnership-cashback .cashback-percent .data-item .data-img {
   max-width: 159px;
   margin-inline: auto;
 }
-#content.partnership-cashback .cashback-percent .range .data .data-item .data-img.long {
+#content.partnership-cashback .cashback-percent .data-item .data-img.long {
   aspect-ratio: 183/53;
   max-width: 183px;
 }
-#content.partnership-cashback .cashback-percent .range .data .data-item .data-img.time {
+#content.partnership-cashback .cashback-percent .data-item .data-img.time {
   max-width: 113px;
 }
-#content.partnership-cashback .cashback-percent .range .data .data-item.percent {
+#content.partnership-cashback .cashback-percent .data-item.percent {
   text-align: left;
   font-size: 3.75rem;
   font-weight: 900;
   flex-basis: 62%;
 }
 @media screen and (min-width: 1135px) {
-  #content.partnership-cashback .cashback-percent .range .data .data-item.percent {
+  #content.partnership-cashback .cashback-percent .data-item.percent {
     flex-basis: 52%;
   }
 }
-#content.partnership-cashback .cashback-percent .range.last {
+#content.partnership-cashback .cashback-percent .last {
   flex-direction: row;
   margin-bottom: 34px;
 }
-#content.partnership-cashback .cashback-percent .range.last .data .data-item {
+#content.partnership-cashback .cashback-percent .last .data-item {
   flex-basis: 40%;
 }
 @media screen and (min-width: 1135px) {
-  #content.partnership-cashback .cashback-percent .range.last .data .data-item {
+  #content.partnership-cashback .cashback-percent .last .data-item {
     flex-basis: 43%;
   }
 }
-#content.partnership-cashback .cashback-percent .range.last .data .data-item.percent {
+#content.partnership-cashback .cashback-percent .last .data-item.percent {
   flex-basis: 62%;
 }
 #content.partnership-cashback .cashback-percent .info-range {
@@ -233,10 +233,10 @@
 #content.partnership-cashback .no-cashback .title {
   max-width: 300px;
 }
-#content.partnership-cashback .no-cashback .block-items .item {
+#content.partnership-cashback .no-cashback .item {
   column-gap: 20px;
 }
-#content.partnership-cashback .no-cashback .block-items .item-text {
+#content.partnership-cashback .no-cashback .item-text {
   flex-basis: 70%;
 }
 #content.partnership-cashback .how-to-pin {
@@ -255,7 +255,7 @@
 #content.partnership-cashback .how-to-pin .browser-tabs .tabs {
   justify-content: start;
 }
-#content.partnership-cashback .how-to-pin .browser-tabs .tabs .tab {
+#content.partnership-cashback .how-to-pin .browser-tabs .tab {
   flex-grow: 0;
   min-width: 109px;
 }
@@ -266,10 +266,10 @@
 #content.partnership-cashback .how-to-pin .browser-tabs .instruction {
   margin-bottom: 40px;
 }
-#content.partnership-cashback .how-to-pin .browser-tabs .instruction li {
+#content.partnership-cashback .how-to-pin .browser-tabs li {
   padding-left: 20px;
 }
-#content.partnership-cashback .how-to-pin .browser-tabs .instruction li::before {
+#content.partnership-cashback .how-to-pin .browser-tabs li::before {
   background-image: none;
   counter-increment: ol-numbers;
   content: counter(ol-numbers) ".";
@@ -279,7 +279,7 @@
   width: 40px;
   text-align: left;
 }
-#content.partnership-cashback .how-to-pin .browser-tabs .instruction li:first-child::before {
+#content.partnership-cashback .how-to-pin .browser-tabs li:first-child::before {
   top: 0;
   transform: none;
 }
