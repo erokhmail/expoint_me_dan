@@ -113,7 +113,6 @@
   flex-direction: row;
 }
 #content.partnership-cashback .how-get .step.second .step-img {
-  align-self: flex-end;
   aspect-ratio: 378/185;
   flex-basis: 50%;
 }
