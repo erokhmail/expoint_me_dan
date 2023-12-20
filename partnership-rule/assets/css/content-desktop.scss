@@ -16,14 +16,10 @@
             margin-bottom: 60px;
 
             ul {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: start;
                 column-gap: 4px;
 
                 li {
                     padding: 12px;
-                    flex-grow: 1;
 
                     &:nth-child(1) {
                         order: 1;
@@ -57,10 +53,7 @@
         .check-items {
             ul {
                 li {
-                    list-style: none;
-                    margin-bottom: 23px;
-                    position: relative;
-                    padding: 0 6px 0 60px;
+                    padding-left: 60px;
 
                     &:first-child {
                         &::before {
@@ -76,39 +69,6 @@
         .how-works {
             display: flex;
             margin-bottom: 125px;
-
-            .icon-blocks {
-                flex-wrap: nowrap;
-                row-gap: 26px;
-
-                .icon-block {
-                    flex: 0 1 32%;
-
-                    &.w-100 {
-                        flex: 0 1 32%;
-                        margin-bottom: 14px;
-                    }
-
-                    &.step-2 {
-                        flex: 0 1 32%;
-
-                        &::after {
-                            content: '';
-                            right: unset;
-                            bottom: unset;
-                            top: 35%;
-                            left: 100%;
-                            transform: translate(-40%, -50%) rotate(180deg);
-                        }
-                    }
-
-                    .icon-title {
-                        min-height: 48px;
-                    }
-
-                }
-
-            }
         }
 
         /*-============================= Section how-works - end =============================-*/
@@ -117,7 +77,6 @@
             margin-bottom: 51px;
 
             h2 {
-                margin-bottom: 10px;
 
                 &.h-title {
                     &::before {
@@ -132,22 +91,14 @@
 
             .get-steps {
                 .step {
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                    row-gap: 25px;
-                    margin-bottom: 15px;
-                    position: relative;
 
                     &.first {
                         flex-direction: row;
-                        row-gap: 10px;
-                        margin-bottom: 80px;
                         justify-content: space-between;
 
                         .num-wrap {
                             flex-direction: row;
-                            flex-basis: 56%;
+                            flex-basis: 55%;
                         }
 
                         .step-description {
@@ -167,7 +118,6 @@
                         }
 
                         .step-img {
-                            align-self: flex-end;
                             flex-basis: 38%;
                         }
 
@@ -183,7 +133,6 @@
                         margin-bottom: 24px;
                         flex-direction: row-reverse;
                         align-items: center;
-                        justify-content: space-between;
 
                         .num-wrap {
                             flex-direction: row;
@@ -198,13 +147,7 @@
                         }
 
                         .with-img {
-                            display: flex;
                             flex-direction: row;
-                            align-items: flex-start;
-                        }
-
-                        .descr-img {
-                            min-width: 88px;
                         }
 
                         .step-img {
@@ -216,7 +159,6 @@
                     }
 
                     &.third {
-                        margin-bottom: 50px;
                         flex-direction: row-reverse;
 
                         &::after {
@@ -272,12 +214,6 @@
                     }
 
                     &.fifth {
-                        .num-wrap {
-                            gap: 35px;
-                            align-items: end;
-                            margin-left: -4rem;
-                        }
-
                         .step-btn {
                             button {
                                 background-color: #0D6EFD;
@@ -297,9 +233,7 @@
             margin-bottom: 89px;
 
             .title-block {
-                margin-bottom: 15px;
                 flex-direction: row;
-
                 justify-content: space-between;
 
                 .title {
@@ -312,13 +246,9 @@
             }
 
             .range {
-                flex-direction: row;
-                align-items: center;
                 margin-bottom: 38px;
 
                 .data {
-                    flex-grow: 1;
-                    column-gap: 10px;
 
                     .data-item {
                         flex-basis: 40%;
@@ -328,7 +258,6 @@
                         }
 
                         .data-img {
-                            aspect-ratio: 1;
                             max-width: 159px;
                             margin-inline: auto;
 
@@ -370,9 +299,9 @@
                             &.percent {
                                 flex-basis: 62%;
 
-                                @media screen and (min-width: 1135px) {
-                                    flex-basis: 52%;
-                                }
+                                // @media screen and (min-width: 1135px) {
+                                //     flex-basis: 52%;
+                                // }
                             }
                         }
                     }
@@ -400,28 +329,6 @@
                     column-gap: 20px;
                 }
 
-                .item-img {
-                    flex-basis: 48%;
-                    align-self: flex-start;
-                    margin-inline: auto;
-
-                    &.first {
-                        aspect-ratio: 191/74;
-                        max-width: 191px;
-                        align-self: center;
-                    }
-
-                    &.second {
-                        aspect-ratio: 99/108;
-                        max-width: 99px;
-                    }
-
-                    &.third {
-                        aspect-ratio: 109/79;
-                        max-width: 109px;
-                    }
-                }
-
                 .item-text {
                     flex-basis: 70%;
                 }
@@ -446,7 +353,6 @@
                 padding-bottom: 0;
 
                 .tabs {
-                    display: flex;
                     justify-content: start;
 
                     .tab {
@@ -458,34 +364,12 @@
                 .tab-content {
                     display: none;
                     padding: 45px 14px 25px 14px;
-                    border-radius: 0px 0px 5px 5px;
-                    border: 1px solid #D9D9D9;
-                    background: #FFF;
-                    position: relative;
-
-                    &.active {
-                        display: block;
-                        z-index: 2;
-                    }
-
-                    p {
-                        margin-bottom: 12px;
-                    }
-
-                    .details {
-                        text-align: center;
-                        padding-bottom: 0;
-                    }
                 }
 
                 .instruction {
-                    counter-reset: ol-numbers;
                     margin-bottom: 40px;
 
                     li {
-                        position: relative;
-                        padding: 0;
-                        margin-bottom: 12px;
                         padding-left: 20px;
 
                         &::before {
@@ -515,11 +399,7 @@
         /*-============================= Section total-cashback - start =============================-*/
         .total-cashback {
             .title {
-                max-width: 330pxx;
-            }
-
-            .h-title {
-                margin-bottom: 25px;
+                max-width: 330px;
             }
 
             .check-items ul {

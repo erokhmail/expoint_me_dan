@@ -11,13 +11,8 @@
             line-height: ($px_size / 16) * 1rem;
         }
 
-        section {
-            scroll-margin-top: 30px;
-        }
-
 
         .scroll-nav {
-            margin-bottom: 50px;
 
             ul {
                 flex-direction: row;
@@ -63,33 +58,7 @@
             max-width: 269px;
         }
 
-        .check-items {
-            ul {
-                li {
-                    list-style: none;
-                    margin-bottom: 23px;
-                    position: relative;
-                    padding: 0 6px 0 47px;
 
-                    &::before {
-                        content: '';
-                        width: 37px;
-                        height: 39px;
-                        background-image: url(../images/list-marker.svg);
-                        position: absolute;
-                        top: 2px;
-                        left: 0;
-                    }
-
-                    span {
-                        display: inline-block;
-                        @include fz(13);
-                        padding-right: 6px;
-                    }
-
-                }
-            }
-        }
 
         /*-============================= Section how-works - start =============================-*/
         .how-works {
@@ -97,14 +66,12 @@
 
             .icon-blocks {
                 flex-wrap: nowrap;
-                row-gap: 26px;
 
                 .icon-block {
                     flex: 0 1 32%;
 
                     &.w-100 {
                         flex: 0 1 32%;
-                        margin-bottom: 14px;
                     }
 
                     &.step-2 {
@@ -132,7 +99,6 @@
         /*-============================= Section how-works - end =============================-*/
         /*-============================= Section how-get - start =============================-*/
         .how-get {
-            margin-bottom: 45px;
 
             h2 {
                 margin-bottom: 10px;
@@ -140,12 +106,6 @@
 
             .get-steps {
                 .step {
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                    row-gap: 25px;
-                    margin-bottom: 15px;
-                    position: relative;
 
                     &.first {
                         row-gap: 10px;
@@ -184,9 +144,6 @@
                         justify-content: space-between;
 
                         .num-wrap {
-                            flex-direction: row;
-                            align-items: flex-start;
-                            gap: 12px;
                             flex-basis: 25%;
                             position: relative;
                             margin-left: 17px;
@@ -200,13 +157,7 @@
                         }
 
                         .with-img {
-                            display: flex;
                             flex-direction: column-reverse;
-                            align-items: flex-start;
-                        }
-
-                        .descr-img {
-                            min-width: 88px;
                         }
 
                         .step-img {
@@ -217,7 +168,6 @@
                     }
 
                     &.third {
-                        margin-bottom: 50px;
 
                         .step-img {
                             flex: 0 1 40%;
@@ -292,17 +242,9 @@
                     .data-item {
 
                         .data-img {
-                            aspect-ratio: 1;
-                            max-width: 111px;
 
                             &.long {
-                                aspect-ratio: 183/53;
                                 max-width: 129px;
-                            }
-
-                            &.time {
-                                aspect-ratio: 106/108;
-                                max-width: 106px;
                             }
                         }
 
@@ -351,8 +293,6 @@
             .block-items {
                 .item {
                     flex-direction: row;
-                    align-items: center;
-                    row-gap: 25px;
                     column-gap: 46px;
                     justify-content: space-between;
                 }
@@ -369,7 +309,6 @@
                     }
 
                     &.second {
-                        aspect-ratio: 99/108;
                         max-width: 99px;
                     }
 
@@ -382,18 +321,9 @@
                 .item-text {
                     flex-basis: 48%;
                     text-align: left;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
 
                     .title {
                         margin-right: auto;
-                    }
-
-                    &.second {
-                        .title {
-                            max-width: 180px;
-                        }
                     }
 
                     .description {
@@ -417,11 +347,6 @@
                 padding-bottom: 35px;
 
                 .tabs {
-                    display: flex;
-                    justify-content: space-between;
-                    margin-bottom: -4px;
-                    column-gap: 2px;
-                    height: 63px;
 
                     .tab {
                         flex-direction: column;
@@ -441,12 +366,6 @@
 
                         &.active-top {
                             flex-direction: row;
-
-                            .name {
-                                display: block;
-                                @include fz(18);
-                                font-weight: 700;
-                            }
 
                             .icon {
                                 width: 84px;
@@ -470,18 +389,8 @@
                 }
 
                 .instruction {
-                    counter-reset: ol-numbers;
                     margin-bottom: 9px;
 
-                    li {
-                        position: relative;
-                        padding: 0;
-                        margin-bottom: 12px;
-
-                        &:last-of-type {
-                            margin-bottom: 5px;
-                        }
-                    }
                 }
             }
         }

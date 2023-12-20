@@ -20,14 +20,10 @@
   margin-bottom: 60px;
 }
 #content.partnership-cashback .scroll-nav ul {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: start;
   column-gap: 4px;
 }
 #content.partnership-cashback .scroll-nav ul li {
   padding: 12px;
-  flex-grow: 1;
 }
 #content.partnership-cashback .scroll-nav ul li:nth-child(1) {
   order: 1;
@@ -50,10 +46,7 @@
   order: 6;
 }
 #content.partnership-cashback .check-items ul li {
-  list-style: none;
-  margin-bottom: 23px;
-  position: relative;
-  padding: 0 6px 0 60px;
+  padding-left: 60px;
 }
 #content.partnership-cashback .check-items ul li:first-child::before {
   top: 50%;
@@ -63,36 +56,8 @@
   display: flex;
   margin-bottom: 125px;
 }
-#content.partnership-cashback .how-works .icon-blocks {
-  flex-wrap: nowrap;
-  row-gap: 26px;
-}
-#content.partnership-cashback .how-works .icon-blocks .icon-block {
-  flex: 0 1 32%;
-}
-#content.partnership-cashback .how-works .icon-blocks .icon-block.w-100 {
-  flex: 0 1 32%;
-  margin-bottom: 14px;
-}
-#content.partnership-cashback .how-works .icon-blocks .icon-block.step-2 {
-  flex: 0 1 32%;
-}
-#content.partnership-cashback .how-works .icon-blocks .icon-block.step-2::after {
-  content: "";
-  right: unset;
-  bottom: unset;
-  top: 35%;
-  left: 100%;
-  transform: translate(-40%, -50%) rotate(180deg);
-}
-#content.partnership-cashback .how-works .icon-blocks .icon-block .icon-title {
-  min-height: 48px;
-}
 #content.partnership-cashback .how-get {
   margin-bottom: 51px;
-}
-#content.partnership-cashback .how-get h2 {
-  margin-bottom: 10px;
 }
 #content.partnership-cashback .how-get h2.h-title::before {
   content: "";
@@ -100,23 +65,13 @@
   height: 155px;
   top: 80%;
 }
-#content.partnership-cashback .how-get .get-steps .step {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  row-gap: 25px;
-  margin-bottom: 15px;
-  position: relative;
-}
 #content.partnership-cashback .how-get .get-steps .step.first {
   flex-direction: row;
-  row-gap: 10px;
-  margin-bottom: 80px;
   justify-content: space-between;
 }
 #content.partnership-cashback .how-get .get-steps .step.first .num-wrap {
   flex-direction: row;
-  flex-basis: 56%;
+  flex-basis: 55%;
 }
 #content.partnership-cashback .how-get .get-steps .step.first .step-description::after {
   content: "";
@@ -132,7 +87,6 @@
   }
 }
 #content.partnership-cashback .how-get .get-steps .step.first .step-img {
-  align-self: flex-end;
   flex-basis: 38%;
 }
 #content.partnership-cashback .how-get .get-steps .step.first .step-num {
@@ -144,7 +98,6 @@
   margin-bottom: 24px;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-between;
 }
 #content.partnership-cashback .how-get .get-steps .step.second .num-wrap {
   flex-direction: row;
@@ -157,12 +110,7 @@
   position: static;
 }
 #content.partnership-cashback .how-get .get-steps .step.second .with-img {
-  display: flex;
   flex-direction: row;
-  align-items: flex-start;
-}
-#content.partnership-cashback .how-get .get-steps .step.second .descr-img {
-  min-width: 88px;
 }
 #content.partnership-cashback .how-get .get-steps .step.second .step-img {
   align-self: flex-end;
@@ -170,7 +118,6 @@
   flex-basis: 50%;
 }
 #content.partnership-cashback .how-get .get-steps .step.third {
-  margin-bottom: 50px;
   flex-direction: row-reverse;
 }
 #content.partnership-cashback .how-get .get-steps .step.third::after {
@@ -213,11 +160,6 @@
   flex-basis: 46%;
   margin-right: 0;
 }
-#content.partnership-cashback .how-get .get-steps .step.fifth .num-wrap {
-  gap: 35px;
-  align-items: end;
-  margin-left: -4rem;
-}
 #content.partnership-cashback .how-get .get-steps .step.fifth .step-btn button {
   background-color: #0D6EFD;
 }
@@ -225,7 +167,6 @@
   margin-bottom: 89px;
 }
 #content.partnership-cashback .cashback-percent .title-block {
-  margin-bottom: 15px;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -236,13 +177,7 @@
   flex-basis: 55%;
 }
 #content.partnership-cashback .cashback-percent .range {
-  flex-direction: row;
-  align-items: center;
   margin-bottom: 38px;
-}
-#content.partnership-cashback .cashback-percent .range .data {
-  flex-grow: 1;
-  column-gap: 10px;
 }
 #content.partnership-cashback .cashback-percent .range .data .data-item {
   flex-basis: 40%;
@@ -253,7 +188,6 @@
   }
 }
 #content.partnership-cashback .cashback-percent .range .data .data-item .data-img {
-  aspect-ratio: 1;
   max-width: 159px;
   margin-inline: auto;
 }
@@ -290,11 +224,6 @@
 #content.partnership-cashback .cashback-percent .range.last .data .data-item.percent {
   flex-basis: 62%;
 }
-@media screen and (min-width: 1135px) {
-  #content.partnership-cashback .cashback-percent .range.last .data .data-item.percent {
-    flex-basis: 52%;
-  }
-}
 #content.partnership-cashback .cashback-percent .info-range {
   max-width: 398px;
 }
@@ -306,24 +235,6 @@
 }
 #content.partnership-cashback .no-cashback .block-items .item {
   column-gap: 20px;
-}
-#content.partnership-cashback .no-cashback .block-items .item-img {
-  flex-basis: 48%;
-  align-self: flex-start;
-  margin-inline: auto;
-}
-#content.partnership-cashback .no-cashback .block-items .item-img.first {
-  aspect-ratio: 191/74;
-  max-width: 191px;
-  align-self: center;
-}
-#content.partnership-cashback .no-cashback .block-items .item-img.second {
-  aspect-ratio: 99/108;
-  max-width: 99px;
-}
-#content.partnership-cashback .no-cashback .block-items .item-img.third {
-  aspect-ratio: 109/79;
-  max-width: 109px;
 }
 #content.partnership-cashback .no-cashback .block-items .item-text {
   flex-basis: 70%;
@@ -342,7 +253,6 @@
   padding-bottom: 0;
 }
 #content.partnership-cashback .how-to-pin .browser-tabs .tabs {
-  display: flex;
   justify-content: start;
 }
 #content.partnership-cashback .how-to-pin .browser-tabs .tabs .tab {
@@ -352,30 +262,11 @@
 #content.partnership-cashback .how-to-pin .browser-tabs .tab-content {
   display: none;
   padding: 45px 14px 25px 14px;
-  border-radius: 0px 0px 5px 5px;
-  border: 1px solid #D9D9D9;
-  background: #FFF;
-  position: relative;
-}
-#content.partnership-cashback .how-to-pin .browser-tabs .tab-content.active {
-  display: block;
-  z-index: 2;
-}
-#content.partnership-cashback .how-to-pin .browser-tabs .tab-content p {
-  margin-bottom: 12px;
-}
-#content.partnership-cashback .how-to-pin .browser-tabs .tab-content .details {
-  text-align: center;
-  padding-bottom: 0;
 }
 #content.partnership-cashback .how-to-pin .browser-tabs .instruction {
-  counter-reset: ol-numbers;
   margin-bottom: 40px;
 }
 #content.partnership-cashback .how-to-pin .browser-tabs .instruction li {
-  position: relative;
-  padding: 0;
-  margin-bottom: 12px;
   padding-left: 20px;
 }
 #content.partnership-cashback .how-to-pin .browser-tabs .instruction li::before {
@@ -393,10 +284,7 @@
   transform: none;
 }
 #content.partnership-cashback .total-cashback .title {
-  max-width: 330pxx;
-}
-#content.partnership-cashback .total-cashback .h-title {
-  margin-bottom: 25px;
+  max-width: 330px;
 }
 #content.partnership-cashback .total-cashback .check-items ul li:first-child::before {
   top: 0;

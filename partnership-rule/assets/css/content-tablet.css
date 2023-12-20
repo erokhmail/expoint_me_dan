@@ -16,12 +16,6 @@
   /*-============================= Section how-to-pin - end =============================-*/
   /*-============================= Section total-cashback - start =============================-*/
 }
-#content.partnership-cashback section {
-  scroll-margin-top: 30px;
-}
-#content.partnership-cashback .scroll-nav {
-  margin-bottom: 50px;
-}
 #content.partnership-cashback .scroll-nav ul {
   flex-direction: row;
   flex-wrap: wrap;
@@ -56,39 +50,17 @@
 #content.partnership-cashback .title {
   max-width: 269px;
 }
-#content.partnership-cashback .check-items ul li {
-  list-style: none;
-  margin-bottom: 23px;
-  position: relative;
-  padding: 0 6px 0 47px;
-}
-#content.partnership-cashback .check-items ul li::before {
-  content: "";
-  width: 37px;
-  height: 39px;
-  background-image: url(../images/list-marker.svg);
-  position: absolute;
-  top: 2px;
-  left: 0;
-}
-#content.partnership-cashback .check-items ul li span {
-  display: inline-block;
-  font-size: 0.8125rem;
-  padding-right: 6px;
-}
 #content.partnership-cashback .how-works {
   margin-bottom: 68px;
 }
 #content.partnership-cashback .how-works .icon-blocks {
   flex-wrap: nowrap;
-  row-gap: 26px;
 }
 #content.partnership-cashback .how-works .icon-blocks .icon-block {
   flex: 0 1 32%;
 }
 #content.partnership-cashback .how-works .icon-blocks .icon-block.w-100 {
   flex: 0 1 32%;
-  margin-bottom: 14px;
 }
 #content.partnership-cashback .how-works .icon-blocks .icon-block.step-2 {
   flex: 0 1 32%;
@@ -104,19 +76,8 @@
 #content.partnership-cashback .how-works .icon-blocks .icon-block .icon-title {
   min-height: 48px;
 }
-#content.partnership-cashback .how-get {
-  margin-bottom: 45px;
-}
 #content.partnership-cashback .how-get h2 {
   margin-bottom: 10px;
-}
-#content.partnership-cashback .how-get .get-steps .step {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  row-gap: 25px;
-  margin-bottom: 15px;
-  position: relative;
 }
 #content.partnership-cashback .how-get .get-steps .step.first {
   row-gap: 10px;
@@ -148,9 +109,6 @@
   justify-content: space-between;
 }
 #content.partnership-cashback .how-get .get-steps .step.second .num-wrap {
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 12px;
   flex-basis: 25%;
   position: relative;
   margin-left: 17px;
@@ -162,19 +120,11 @@
   top: 43%;
 }
 #content.partnership-cashback .how-get .get-steps .step.second .with-img {
-  display: flex;
   flex-direction: column-reverse;
-  align-items: flex-start;
-}
-#content.partnership-cashback .how-get .get-steps .step.second .descr-img {
-  min-width: 88px;
 }
 #content.partnership-cashback .how-get .get-steps .step.second .step-img {
   align-self: flex-end;
   min-height: 166px;
-}
-#content.partnership-cashback .how-get .get-steps .step.third {
-  margin-bottom: 50px;
 }
 #content.partnership-cashback .how-get .get-steps .step.third .step-img {
   flex: 0 1 40%;
@@ -224,17 +174,8 @@
   flex-grow: 1;
   column-gap: 10px;
 }
-#content.partnership-cashback .cashback-percent .range .data .data-item .data-img {
-  aspect-ratio: 1;
-  max-width: 111px;
-}
 #content.partnership-cashback .cashback-percent .range .data .data-item .data-img.long {
-  aspect-ratio: 183/53;
   max-width: 129px;
-}
-#content.partnership-cashback .cashback-percent .range .data .data-item .data-img.time {
-  aspect-ratio: 106/108;
-  max-width: 106px;
 }
 #content.partnership-cashback .cashback-percent .range .data .data-item.percent {
   text-align: center;
@@ -264,8 +205,6 @@
 }
 #content.partnership-cashback .no-cashback .block-items .item {
   flex-direction: row;
-  align-items: center;
-  row-gap: 25px;
   column-gap: 46px;
   justify-content: space-between;
 }
@@ -280,7 +219,6 @@
   align-self: center;
 }
 #content.partnership-cashback .no-cashback .block-items .item-img.second {
-  aspect-ratio: 99/108;
   max-width: 99px;
 }
 #content.partnership-cashback .no-cashback .block-items .item-img.third {
@@ -290,15 +228,9 @@
 #content.partnership-cashback .no-cashback .block-items .item-text {
   flex-basis: 48%;
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 #content.partnership-cashback .no-cashback .block-items .item-text .title {
   margin-right: auto;
-}
-#content.partnership-cashback .no-cashback .block-items .item-text.second .title {
-  max-width: 180px;
 }
 #content.partnership-cashback .no-cashback .block-items .item-text .description {
   padding: 0;
@@ -312,13 +244,6 @@
 #content.partnership-cashback .how-to-pin .browser-tabs {
   margin-top: 104px;
   padding-bottom: 35px;
-}
-#content.partnership-cashback .how-to-pin .browser-tabs .tabs {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: -4px;
-  column-gap: 2px;
-  height: 63px;
 }
 #content.partnership-cashback .how-to-pin .browser-tabs .tabs .tab {
   flex-direction: column;
@@ -337,11 +262,6 @@
 #content.partnership-cashback .how-to-pin .browser-tabs .tabs .tab.active-top {
   flex-direction: row;
 }
-#content.partnership-cashback .how-to-pin .browser-tabs .tabs .tab.active-top .name {
-  display: block;
-  font-size: 1.125rem;
-  font-weight: 700;
-}
 #content.partnership-cashback .how-to-pin .browser-tabs .tabs .tab.active-top .icon {
   width: 84px;
   height: auto;
@@ -357,16 +277,7 @@
   padding-bottom: 0;
 }
 #content.partnership-cashback .how-to-pin .browser-tabs .instruction {
-  counter-reset: ol-numbers;
   margin-bottom: 9px;
-}
-#content.partnership-cashback .how-to-pin .browser-tabs .instruction li {
-  position: relative;
-  padding: 0;
-  margin-bottom: 12px;
-}
-#content.partnership-cashback .how-to-pin .browser-tabs .instruction li:last-of-type {
-  margin-bottom: 5px;
 }
 #content.partnership-cashback .total-cashback .h-title {
   margin-bottom: 25px;
